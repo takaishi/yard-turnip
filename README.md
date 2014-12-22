@@ -10,6 +10,10 @@ This plugin adds Turnip steps to YARD output.
 gem install yard-turnip
 ```
 
+```
+yard --plugin yard-turnip *_steps.rb
+```
+
 ## Licence
 
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
