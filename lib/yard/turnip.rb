@@ -1,7 +1,7 @@
 require 'yard'
 module YARD
   module Turnip
-    VERSION = "0.0.1"
+    VERSION = "0.0.2"
   end
 
   module CodeObjects
