@@ -5,7 +5,7 @@ module YARD
   end
 
   module CodeObjects
-    class StepsForObject < MethodObject
+    class StepsForObject < ModuleObject
       def type
         :module
       end
