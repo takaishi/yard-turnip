@@ -17,6 +17,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  s.add_dependency "yard", "~> 0.7"
-  s.add_development_dependency "rspec", "~> 2.6"
+  spec.add_dependency "yard", "~> 0.7"
+  spec.add_development_dependency "rspec", "~> 2.6"
 end
