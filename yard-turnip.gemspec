@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "yard-turnip"
-  spec.version       = YARD::Turnip::VERSION
+  spec.version       = "0.0.2"
   spec.authors       = ["Ryo TAKAISHI"]
   spec.email         = ["ryo.takaishi.0@gmail.com"]
   spec.summary       = "This plugin adds Turnip steps to YARD output."
