@@ -23,8 +23,8 @@ module YARD
 
     def process
       name = statement.parameters.first.jump(:tstring_content, :ident).source
-      object = CodeObjects::StepsForObject.new(namespace, name)
-      register(object)
+      mod = register(CodeObjects::StepsForObject.new(namespace, name))
+      parse_block(statement[2][1], :namespace => mod)
     end
   end
 
