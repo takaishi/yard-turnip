@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'yard/turnip'
 
 Gem::Specification.new do |spec|
   spec.name          = "yard-turnip"
-  spec.version       = YARD::Turnip::VERSION
+  spec.version       = "0.0.2"
   spec.authors       = ["Ryo TAKAISHI"]
   spec.email         = ["ryo.takaishi.0@gmail.com"]
   spec.summary       = "This plugin adds Turnip steps to YARD output."
@@ -18,6 +17,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  s.add_dependency "yard", "~> 0.7"
-  s.add_development_dependency "rspec", "~> 2.6"
+  spec.add_dependency "yard", "~> 0.7"
+  spec.add_development_dependency "rspec", "~> 2.6"
 end
