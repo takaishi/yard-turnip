@@ -1,0 +1,14 @@
+<% if method_listing.any? { |obj| obj.class == YARD::CodeObjects::StepObject } %>
+  <% if method_listing.any? {|obj| obj.tags(:example).any? } %>
+    <div class="tags">
+      <h3>Step Summary:</h3>
+      <ul class="see">
+        <% method_listing.each_with_index do |object, i| %>
+          <% object.tags(:example).each do |tag| %>
+            <pre class="example code"><code><%= html_syntax_highlight(tag.text) %></code></pre>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>
