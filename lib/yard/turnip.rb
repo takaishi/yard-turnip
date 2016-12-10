@@ -1,8 +1,5 @@
 require 'yard'
 
-puts "#{YardTurnip.root}"
-YARD::Templates::Engine.register_template_path Pathname.new('/var/www/templates_custom')
-
 module YARD
   module CodeObjects
     class StepsForObject < ModuleObject

@@ -1,8 +1,4 @@
+
+YARD::Templates::Engine.register_template_path File.dirname(__FILE__) + '/../templates'
 require 'yard/turnip'
 
-module YardTurnip
-  def self.root
-    puts File.dirname __dir__
-    File.dirname __dir__
-  end
-end
